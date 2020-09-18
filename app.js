@@ -69,10 +69,12 @@ async function start() {
 
     if (fs.existsSync(path)) {
       content = fs.readFileSync(path, "utf8");
-      content = content.replace(/(\n[\s\t]*\r*\n)/g, '\n');
     }
 
-    await sendNotify(content);
+   // 发送签到数据
+    await sendNotify(content.split("【签到概览】")[0]);
+    // 发送签到统计
+    await sendNotify("【签到概览】" + content.split("【签到概览】")[1]);
     console.log("发送结果完毕");
   }
 }
