@@ -69,6 +69,7 @@ async function start() {
 
     if (fs.existsSync(path)) {
       content = fs.readFileSync(path, "utf8");
+      content = content.replace(/(\n[\s\t]*\r*\n)/g, '\n');
     }
 
     await sendNotify(content);
