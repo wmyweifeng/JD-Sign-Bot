@@ -1,0 +1,30 @@
+{
+  "name": "jd-sign-bot",
+  "version": "1.0.0",
+  "description": "This is a script for JD.com to check in automatically every day.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yqchilde/JD-Sign-Bot.git"
+  },
+  "keywords": [
+    "京东",
+    "JD",
+    "Sign",
+    "Bot"
+  ],
+  "author": "Yqchilde",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yqchilde/JD-Sign-Bot/issues"
+  },
+  "homepage": "https://github.com/yqchilde/JD-Sign-Bot#readme",
+  "dependencies": {
+    "download": "^8.0.0",
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2"
+  }
+}
