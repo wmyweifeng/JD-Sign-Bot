@@ -71,10 +71,8 @@ async function start() {
       content = fs.readFileSync(path, "utf8");
     }
 
-   // 发送签到数据
-    await sendNotify(content.split("【签到概览】")[0]);
-    // 发送签到统计
-    await sendNotify("【签到概览】" + content.split("【签到概览】")[1]);
+    // 发送签到数据
+    await sendNotify(content);
     console.log("发送结果完毕");
   }
 }
